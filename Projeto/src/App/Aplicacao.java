@@ -6,15 +6,34 @@ import Service.CadastroUsuario;
 import java.util.*;
 public class Aplicacao {
    public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
 
+      Scanner input = new Scanner(System.in);
       Repositorio repositorio = Repositorio.getInstancia();
       ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
       ControladorUsuario c2 = new ControladorUsuario(repositorio, repositorio.getUsuario(2097453));
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
 
-
       System.out.println("Selecione opção do menu");
+      byte opcao = input.nextByte();
+      switch (opcao) {
+         case 1:
+
+         case 2:
+
+         case 3:
+
+         case 4:
+
+         case 5:
+
+
+         case 6:
+
+         case 7:
+
+         case 8:
+      }
+
 
       c1.realizarEmprestimo((Professor) (repositorio.getUsuario(2097453)), repositorio.getProjetor("PAT-100235"));
       c2.realizarPermutacao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
