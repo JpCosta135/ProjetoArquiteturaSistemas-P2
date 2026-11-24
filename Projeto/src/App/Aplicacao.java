@@ -36,6 +36,7 @@ public static void main(String[] args) {
    System.out.println("Digite a senha do atendente: ");
    String senhaA = input.nextLine();
    c3.efetuarCadastro((byte) 2, nomeA, matriculaA, senhaA);
+
    System.out.println(c3.lerUsuario(1943675));
    c3.atualizarUsuario(1943675, "Caio Ferreira", 1943675, "en3tb");
    c3.removerUsuario(1943675);
@@ -45,6 +46,9 @@ public static void main(String[] args) {
    System.out.println(c1.lerProjetor("PAT-100233"));
    c1.atualizarProjetor("PAT-100233", "BenQ MS550", "PAT-100233", false);
    c1.removerProjetor("PAT-100233");
+
+
+   input.close();
 
 
 }
