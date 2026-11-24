@@ -2,7 +2,6 @@ package Controller;
 
 import Model.Professor;
 import Model.Projetor;
-import Model.Usuario;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
 

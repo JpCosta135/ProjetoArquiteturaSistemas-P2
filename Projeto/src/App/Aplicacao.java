@@ -1,5 +1,4 @@
 import Controller.ControladorAtendente;
-import Controller.ControladorUsuario;
 import Model.*;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
@@ -13,7 +12,6 @@ public class Aplicacao {
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
 
       ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
-      ControladorUsuario c2 = new ControladorUsuario(repositorio, repositorio.getUsuario(2097453));
 
       System.out.println("Selecione opção do menu");
 
@@ -43,9 +41,7 @@ public class Aplicacao {
 
 
       c1.realizarEmprestimo((Professor) (repositorio.getUsuario(2097453)), repositorio.getProjetor("PAT-100235"));
-      c2.realizarPermutacao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
-      c1.realizarDevolucao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
-      c2.realizarAutenticacao("ebt325");
+       c1.realizarDevolucao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
 
 
       System.out.println("Digite 1 para cadastrar Professor");
