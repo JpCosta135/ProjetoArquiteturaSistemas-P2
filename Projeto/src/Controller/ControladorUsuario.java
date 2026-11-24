@@ -13,7 +13,7 @@ public abstract class ControladorUsuario {
     }
 
 
-
+    public abstract void realizarAutenticacao(String senha);
 
 
 
