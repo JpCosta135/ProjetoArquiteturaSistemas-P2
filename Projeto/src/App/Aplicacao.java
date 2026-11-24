@@ -10,7 +10,6 @@ public class Aplicacao {
       Scanner input = new Scanner(System.in);
       Repositorio repositorio = Repositorio.getInstancia();
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
-
       System.out.println("Selecione opção do menu");
       System.out.println("1 - realizar empréstimo");
       System.out.println("2 - realizar permutação");
@@ -36,26 +35,7 @@ public class Aplicacao {
 
        }
 
-      System.out.println("Digite 1 para cadastrar Professor");
-      System.out.println("Digite 2 para cadastrar Atendente");
-      byte tipo = input.nextByte();
-      if (tipo == 1) {
-         System.out.println("Digite o nome do professor: ");
-         String nomeP = input.nextLine();
-         System.out.println("Digite a matricula do professor: ");
-         int matriculaP = input.nextInt();
-         System.out.println("Digite a senha do professor: ");
-         String senhaP = input.nextLine();
-         c3.efetuarCadastro((byte) 1, nomeP, matriculaP, senhaP);
-      } else if (tipo == 2) {
-         System.out.println("Digite o nome do atendente: ");
-         String nomeA = input.nextLine();
-         System.out.println("Digite a matricula do atendente: ");
-         int matriculaA = input.nextInt();
-         System.out.println("Digite a senha do atendente: ");
-         String senhaA = input.nextLine();
-         c3.efetuarCadastro((byte) 2, nomeA, matriculaA, senhaA);
-      }
+
 
 
 
