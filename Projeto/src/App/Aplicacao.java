@@ -29,11 +29,6 @@ public class Aplicacao {
          System.out.println("Digite a senha do professor: ");
          String senhaP = input.nextLine();
          c3.efetuarCadastro((byte) 1, nomeP, matriculaP, senhaP);
-         System.out.println(c3.lerUsuario(1890298));
-         c3.atualizarUsuario(1890298, "Armando Alves", 1890298, "3737hr");
-         c3.removerUsuario(1890298);
-
-
       } else if (opcao == 2) {
          System.out.println("Digite o nome do atendente: ");
          String nomeA = input.nextLine();
@@ -42,13 +37,14 @@ public class Aplicacao {
          System.out.println("Digite a senha do atendente: ");
          String senhaA = input.nextLine();
          c3.efetuarCadastro((byte) 2, nomeA, matriculaA, senhaA);
-         System.out.println(c3.lerUsuario(1943675));
-         c3.atualizarUsuario(1943675, "Caio Ferreira", 1943675, "en3tb");
-         c3.removerUsuario(1943675);
-
-
-
       }
+
+      System.out.println(c3.lerUsuario(1890298));
+      c3.atualizarUsuario(1890298, "Armando Alves", 1890298, "3737hr");
+      c3.removerUsuario(1890298);
+      System.out.println(c3.lerUsuario(1943675));
+      c3.atualizarUsuario(1943675, "Caio Ferreira", 1943675, "en3tb");
+      c3.removerUsuario(1943675);
 
 
       Projetor p1 = new Projetor("BenQ MS550", "PAT-100233", true);
