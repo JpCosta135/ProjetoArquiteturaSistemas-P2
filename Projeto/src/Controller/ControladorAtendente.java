@@ -5,13 +5,12 @@ import Model.Professor;
 import Model.Projetor;
 import Repository.Repositorio;
 
-public class ControladorAtendente {
+public class ControladorAtendente extends ControladorUsuario {
     private Repositorio repositorio;
     private Atendente atendente;
 
     public ControladorAtendente(Repositorio repositorio, Atendente atendente) {
-        this.repositorio = repositorio;
-        this.atendente = atendente;
+        super(repositorio, atendente);
     }
 
     public void realizarEmprestimo(Professor professor, Projetor  projetor){

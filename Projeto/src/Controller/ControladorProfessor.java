@@ -5,13 +5,12 @@ import Model.Projetor;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
 
-public class ControladorProfessor {
+public class ControladorProfessor extends ControladorUsuario {
     private Repositorio repositorio;
     private Professor professor;
 
     public ControladorProfessor(Repositorio repositorio, Professor professor) {
-        this.repositorio = repositorio;
-        this.professor = professor;
+        super(repositorio, professor);
     }
 
     public void realizarCadastro(byte tipo, String nome, int matricula, String senha, CadastroUsuario cadastro) {
