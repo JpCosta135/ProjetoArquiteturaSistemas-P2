@@ -14,6 +14,10 @@ public class Aplicacao {
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
 
       System.out.println("Selecione opção do menu");
+      System.out.println("1 - realizar empréstimo");
+      System.out.println("2 - realizar permutação");
+      System.out.println("3 - realizar devolução");
+      System.out.println("4 - realizar autenticação");
       byte opcao = input.nextByte();
       switch (opcao) {
          case 1:
@@ -43,9 +47,9 @@ public class Aplicacao {
 
       System.out.println("Digite 1 para cadastrar Professor");
       System.out.println("Digite 2 para cadastrar Atendente");
-      byte opcao = input.nextByte();
+      byte tipo = input.nextByte();
 
-      if (opcao == 1) {
+      if (tipo == 1) {
          System.out.println("Digite o nome do professor: ");
          String nomeP = input.nextLine();
          System.out.println("Digite a matricula do professor: ");
@@ -53,7 +57,7 @@ public class Aplicacao {
          System.out.println("Digite a senha do professor: ");
          String senhaP = input.nextLine();
          c3.efetuarCadastro((byte) 1, nomeP, matriculaP, senhaP);
-      } else if (opcao == 2) {
+      } else if (tipo == 2) {
          System.out.println("Digite o nome do atendente: ");
          String nomeA = input.nextLine();
          System.out.println("Digite a matricula do atendente: ");
