@@ -8,10 +8,12 @@ public class Aplicacao {
    public static void main(String[] args) {
 
       Scanner input = new Scanner(System.in);
+
+
+
+
       Repositorio repositorio = Repositorio.getInstancia();
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
-
-
 
       System.out.println("Selecione opção do menu");
       byte opcao = input.nextByte();
