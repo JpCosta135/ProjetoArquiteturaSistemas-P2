@@ -12,10 +12,15 @@ public class Aplicacao {
       ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
       ControladorUsuario c2 = new ControladorUsuario(repositorio, repositorio.getUsuario(2097453));
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
+
+
+      System.out.println("Selecione opção do menu");
+
       c1.realizarEmprestimo((Professor) (repositorio.getUsuario(2097453)), repositorio.getProjetor("PAT-100235"));
       c2.realizarPermutacao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
       c1.realizarDevolucao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
-      c2.realizarAutenticacao("ebt325"); // Instanciação dos objetos e operações básicas do sistema
+      c2.realizarAutenticacao("ebt325");
+
 
       System.out.println("Digite 1 para cadastrar Professor");
       System.out.println("Digite 2 para cadastrar Atendente");
