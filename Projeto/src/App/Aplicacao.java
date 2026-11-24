@@ -11,11 +11,12 @@ public class Aplicacao {
       Scanner input = new Scanner(System.in);
       Repositorio repositorio = Repositorio.getInstancia();
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
+
       ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
       ControladorUsuario c2 = new ControladorUsuario(repositorio, repositorio.getUsuario(2097453));
 
       System.out.println("Selecione opção do menu");
-      System.out.println();
+
       System.out.println("1 - realizar empréstimo");
       System.out.println("2 - realizar permutação");
       System.out.println("3 - realizar devolução");
