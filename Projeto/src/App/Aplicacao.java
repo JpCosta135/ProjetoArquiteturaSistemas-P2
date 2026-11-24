@@ -4,6 +4,7 @@ import Model.*;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
 import java.util.*;
+
 public class Aplicacao {
    public static void main(String[] args) {
 
@@ -73,7 +74,6 @@ public class Aplicacao {
       System.out.println(c3.lerUsuario(1943675));
       c3.atualizarUsuario(1943675, "Caio Ferreira", 1943675, "en3tb");
       c3.removerUsuario(1943675);
-
       Projetor p1 = new Projetor("BenQ MS550", "PAT-100233", true);
       c1.realizarCadastroProjetor(p1);
       System.out.println(c1.lerProjetor("PAT-100233"));
