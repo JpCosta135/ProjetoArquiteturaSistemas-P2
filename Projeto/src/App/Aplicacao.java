@@ -1,5 +1,3 @@
-import Controller.ControladorAtendente;
-import Model.*;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
 import java.util.*;
