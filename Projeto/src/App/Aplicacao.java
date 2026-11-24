@@ -10,7 +10,6 @@ public class Aplicacao {
       Scanner input = new Scanner(System.in);
       Repositorio repositorio = Repositorio.getInstancia();
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
-      ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
 
       System.out.println("Selecione opção do menu");
       System.out.println("1 - realizar empréstimo");
@@ -20,7 +19,7 @@ public class Aplicacao {
       System.out.println("5 - menu usuário");
       System.out.println("6 - menu projetor ");
 
-       byte opcao = input.nextByte();
+      byte opcao = input.nextByte();
       switch (opcao) {
          case 1:
 
@@ -36,8 +35,6 @@ public class Aplicacao {
          case 6:
 
        }
-      c1.realizarEmprestimo((Professor) (repositorio.getUsuario(2097453)), repositorio.getProjetor("PAT-100235"));
-       c1.realizarDevolucao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
 
       System.out.println("Digite 1 para cadastrar Professor");
       System.out.println("Digite 2 para cadastrar Atendente");
