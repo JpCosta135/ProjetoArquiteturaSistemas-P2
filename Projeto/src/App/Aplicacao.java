@@ -19,6 +19,8 @@ public class Aplicacao {
          System.out.println("Informe sua senha");
          String senha = input.next();
 
+
+
       } else if (opcao == 2) {
 
       }
