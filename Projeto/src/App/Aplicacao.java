@@ -9,6 +9,16 @@ public class Aplicacao {
 
       Repositorio repositorio = Repositorio.getInstancia();
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
+      System.out.println("Digite 1 para efetuar login");
+      System.out.println("Digite 2 para efetuar cadastro");
+
+      byte opcao = input.nextByte();
+
+      if (opcao == 1) {
+
+      } else if (opcao == 2) {
+
+      }
 
 
 
