@@ -10,6 +10,7 @@ public class Aplicacao {
       Scanner input = new Scanner(System.in);
       Repositorio repositorio = Repositorio.getInstancia();
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
+
       System.out.println("Selecione opção do menu");
       System.out.println("1 - realizar empréstimo");
       System.out.println("2 - realizar permutação");
@@ -17,8 +18,8 @@ public class Aplicacao {
       System.out.println("4 - realizar autenticação");
       System.out.println("5 - menu usuário");
       System.out.println("6 - menu projetor ");
-
       byte opcao = input.nextByte();
+
       switch (opcao) {
          case 1:
 
@@ -34,10 +35,6 @@ public class Aplicacao {
          case 6:
 
        }
-
-
-
-
 
 
       input.close();
