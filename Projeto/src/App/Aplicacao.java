@@ -18,6 +18,10 @@ public class Aplicacao {
       System.out.println("2 - realizar permutação");
       System.out.println("3 - realizar devolução");
       System.out.println("4 - realizar autenticação");
+      System.out.println("5 - ");
+      System.out.println("6 - ");
+      System.out.println("7 - ");
+      System.out.println("8 - ");
       byte opcao = input.nextByte();
       switch (opcao) {
          case 1:
@@ -73,8 +77,6 @@ public class Aplicacao {
       System.out.println(c3.lerUsuario(1943675));
       c3.atualizarUsuario(1943675, "Caio Ferreira", 1943675, "en3tb");
       c3.removerUsuario(1943675);
-
-
       Projetor p1 = new Projetor("BenQ MS550", "PAT-100233", true);
       c1.realizarCadastroProjetor(p1);
       System.out.println(c1.lerProjetor("PAT-100233"));
