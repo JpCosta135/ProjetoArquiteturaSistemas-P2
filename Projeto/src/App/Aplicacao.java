@@ -10,11 +10,9 @@ public class Aplicacao {
       Scanner input = new Scanner(System.in);
       Repositorio repositorio = Repositorio.getInstancia();
       CadastroUsuario c3 = new CadastroUsuario(repositorio);
-
       ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
 
       System.out.println("Selecione opção do menu");
-
       System.out.println("1 - realizar empréstimo");
       System.out.println("2 - realizar permutação");
       System.out.println("3 - realizar devolução");
@@ -38,16 +36,12 @@ public class Aplicacao {
          case 6:
 
        }
-
-
       c1.realizarEmprestimo((Professor) (repositorio.getUsuario(2097453)), repositorio.getProjetor("PAT-100235"));
        c1.realizarDevolucao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
-
 
       System.out.println("Digite 1 para cadastrar Professor");
       System.out.println("Digite 2 para cadastrar Atendente");
       byte tipo = input.nextByte();
-
       if (tipo == 1) {
          System.out.println("Digite o nome do professor: ");
          String nomeP = input.nextLine();
