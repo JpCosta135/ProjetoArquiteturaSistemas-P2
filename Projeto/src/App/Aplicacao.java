@@ -1,3 +1,5 @@
+import Controller.ControladorAtendente;
+import Controller.ControladorUsuario;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
 import java.util.*;
@@ -14,9 +16,11 @@ public class Aplicacao {
 
       if (opcao == 1) {
          System.out.println("Informe sua matricula");
-         String matricula = input.next();
+         int matricula = input.nextInt();
          System.out.println("Informe sua senha");
          String senha = input.next();
+
+
 
 
 
