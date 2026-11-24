@@ -12,7 +12,6 @@ public static void main(String[] args) {
    ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
    ControladorUsuario c2 = new ControladorUsuario(repositorio, repositorio.getUsuario(2097453));
    CadastroUsuario c3 = new CadastroUsuario(repositorio);
-
    c1.realizarEmprestimo((Professor) (repositorio.getUsuario(2097453)), repositorio.getProjetor("PAT-100235"));
    c2.realizarPermutacao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
    c1.realizarDevolucao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
@@ -36,7 +35,6 @@ public static void main(String[] args) {
    System.out.println("Digite a senha do atendente: ");
    String senhaA = input.nextLine();
    c3.efetuarCadastro((byte) 2, nomeA, matriculaA, senhaA);
-
    System.out.println(c3.lerUsuario(1943675));
    c3.atualizarUsuario(1943675, "Caio Ferreira", 1943675, "en3tb");
    c3.removerUsuario(1943675);
