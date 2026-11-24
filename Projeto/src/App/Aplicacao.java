@@ -12,17 +12,32 @@ public static void main(String[] args) {
    ControladorAtendente c1 = new ControladorAtendente(repositorio, (Atendente) repositorio.getUsuario(2345786));
    ControladorUsuario c2 = new ControladorUsuario(repositorio, repositorio.getUsuario(2097453));
    CadastroUsuario c3 = new CadastroUsuario(repositorio);
+
+
+
    c1.realizarEmprestimo((Professor) (repositorio.getUsuario(2097453)), repositorio.getProjetor("PAT-100235"));
    c2.realizarPermutacao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
    c1.realizarDevolucao((Professor) (repositorio.getUsuario(2234566)), repositorio.getProjetor("PAT-100235"));
    c2.realizarAutenticacao("ebt325"); // Instanciação dos objetos e operações básicas do sistema
 
-   c3.efetuarCadastro((byte) 1, "Armando Alves", 1890298, "dfjo23");
+   System.out.println("Digite o nome do professor: ");
+   String nomeP = input.nextLine();
+   System.out.println("Digite a matricula do professor: ");
+   int matriculaP = input.nextInt();
+   System.out.println("Digite a senha do professor: ");
+   String senhaP = input.nextLine();
+   c3.efetuarCadastro((byte) 1, nomeP, matriculaP, senhaP);
    System.out.println(c3.lerUsuario(1890298));
    c3.atualizarUsuario(1890298, "Armando Alves", 1890298, "3737hr");
    c3.removerUsuario(1890298); // CRUD de professores
 
-   c3.efetuarCadastro((byte) 2, "Caio Ferreira", 1943675, "tbrt4");
+   System.out.println("Digite o nome do atendente: ");
+   String nomeA = input.nextLine();
+   System.out.println("Digite a matricula do atendente: ");
+   int matriculaA = input.nextInt();
+   System.out.println("Digite a senha do atendente: ");
+   String senhaA = input.nextLine();
+   c3.efetuarCadastro((byte) 2, nomeA, matriculaA, senhaA);
    System.out.println(c3.lerUsuario(1943675));
    c3.atualizarUsuario(1943675, "Caio Ferreira", 1943675, "en3tb");
    c3.removerUsuario(1943675); //  CRUD de atendentes
