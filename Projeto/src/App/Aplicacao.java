@@ -1,3 +1,4 @@
+import Model.Usuario;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
 import java.util.*;
@@ -17,6 +18,7 @@ public class Aplicacao {
          int matricula = input.nextInt();
          System.out.println("Informe sua senha");
          String senha = input.next();
+
 
       } else if (opcao == 2) {
 
