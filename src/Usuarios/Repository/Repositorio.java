@@ -1,7 +1,6 @@
 package Repository;
 
 import Model.Projetor;
-import Model.Usuario;
 
 import java.util.Hashtable;
 

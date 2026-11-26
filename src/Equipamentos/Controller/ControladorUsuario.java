@@ -1,6 +1,5 @@
 package Controller;
 
-import Model.Usuario;
 import Repository.Repositorio;
 
 public abstract class ControladorUsuario {

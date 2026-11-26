@@ -1,6 +1,5 @@
 package Service;
 
-import Model.Usuario;
 import Repository.Repositorio;
 
 public class CadastroUsuario {

@@ -1,6 +1,5 @@
 package Controller;
 
-import Model.Professor;
 import Model.Projetor;
 import Repository.Repositorio;
 import Service.CadastroUsuario;
