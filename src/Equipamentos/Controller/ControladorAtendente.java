@@ -1,6 +1,9 @@
 package Controller;
 
+import Model.Atendente;
+import Model.Professor;
 import Model.Projetor;
+import Repository.Repositorio;
 
 public class ControladorAtendente extends ControladorUsuario {
     private Repositorio repositorio;
