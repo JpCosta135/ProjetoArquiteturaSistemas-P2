@@ -1,0 +1,53 @@
+package Controller;
+
+import Model.Atendente;
+import Model.Professor;
+import Model.Projetor;
+import Repository.Repositorio;
+
+public class ControladorAtendente extends ControladorUsuario {
+    private Repositorio repositorio;
+    private Atendente atendente;
+
+    public ControladorAtendente(Repositorio repositorio, Atendente atendente) {
+        super(repositorio, atendente);
+    }
+
+    public void realizarEmprestimo(Professor professor, Projetor  projetor){
+        atendente.realizarEmprestimo(professor, projetor);
+    }
+    public void realizarDevolucao(Professor professor, Projetor projetor){
+        atendente.realizarDevolucao(professor, projetor);
+    }
+    public void realizarAutenticacao(String senha) {
+        atendente.autenticar(senha);
+    }
+
+    public void realizarCadastroProjetor(Projetor p){
+       repositorio.adicionarProjetor(p);
+    }
+    public void atualizarProjetor(String codigo,String nome,String codigoNovo,boolean estado) {
+        repositorio.setProjetor(codigo,nome,codigoNovo,estado);
+    }
+    public void removerProjetor(String codigo){
+        repositorio.removerProjetor(codigo);
+    }
+    public Projetor lerProjetor(String codigo) {
+        return repositorio.getProjetor(codigo);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
