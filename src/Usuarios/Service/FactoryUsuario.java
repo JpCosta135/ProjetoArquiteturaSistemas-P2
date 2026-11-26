@@ -1,7 +1,5 @@
 package Service;
 
-import Model.Atendente;
-import Model.Professor;
 import Model.Usuario;
 import Repository.Repositorio;
 

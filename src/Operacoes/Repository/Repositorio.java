@@ -1,7 +1,5 @@
 package Repository;
 
-import Model.Atendente;
-import Model.Professor;
 import Model.Projetor;
 import Model.Usuario;
 
