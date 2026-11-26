@@ -1,6 +1,8 @@
 package Repository;
 
+import Model.Atendente;
 import Model.Projetor;
+import Model.Usuario;
 
 import java.util.Hashtable;
 
