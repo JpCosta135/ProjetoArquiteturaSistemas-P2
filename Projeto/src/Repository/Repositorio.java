@@ -1,8 +1,5 @@
 package Repository;
-import Model.Atendente;
-import Model.Professor;
-import Model.Projetor;
-import Model.Usuario;
+import Model.*;
 import java.util.Hashtable;
 
 public class Repositorio {
