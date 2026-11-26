@@ -1,7 +1,6 @@
 package Service;
 
 import Model.*;
-import Repository.Repositorio;
 
 public class FactoryUsuario {
     private Repositorio repositorio;

@@ -1,7 +1,6 @@
 package Controller;
 
 import Model.Projetor;
-import Repository.Repositorio;
 import Service.CadastroUsuario;
 
 public class ControladorProfessor extends ControladorUsuario {

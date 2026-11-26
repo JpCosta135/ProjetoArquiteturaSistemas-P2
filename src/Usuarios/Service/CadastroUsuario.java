@@ -1,7 +1,5 @@
 package Service;
 
-import Repository.Repositorio;
-
 public class CadastroUsuario {
     private Repositorio repositorio;
 
