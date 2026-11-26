@@ -1,5 +1,8 @@
 package Controller;
 
+import Model.Usuario;
+import Repository.Repositorio;
+
 public abstract class ControladorUsuario {
     private Repositorio repositorio;
     private Usuario usuario;
